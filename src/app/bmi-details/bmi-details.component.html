@@ -1,0 +1,5 @@
+<p> The name of the person is {{person.name}}.</p>
+<p> The age of the person is {{person.age}}.</p>
+<p> The height of the person is {{person.height}} m.</p>
+<p> The weight of the person is {{person.weight}} kg.</p>  <input [value]="person.weight" type="number" (change)="onWeightChange($event)"  placeholder="weight" value="0">
+<p> The BMI of the person is {{getPersonBmi()}}</p>

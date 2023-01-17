@@ -1,0 +1,9 @@
+<div *ngFor="let person of persones">
+  <div [ngStyle]="{'color': getColor(decideWeightStatus(getPersonBmi(person)))}">
+    {{person.name}} has the BMI: {{getPersonBmi(person)}} and is considered {{decideWeightStatus(getPersonBmi(person))}}
+  </div>
+
+  <div>
+    <button routerLink="/bmi-details" [state]="{person}" >View Details</button>
+  </div>
+</div>
